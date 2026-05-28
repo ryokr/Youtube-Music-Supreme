@@ -5,8 +5,8 @@
 @homepageURL    https://userstyles.world/user/ryokr
 @supportURL     https://github.com/ryokr/Youtube-Music-Supreme/issues
 @author         RYO.O - youtube.com/@ryotoiday
-@license        CC BY-NC-ND 4.0
-@version        4.0.68
+@license        MIT
+@version        4.0.69
 @preprocessor   stylus
 
 
@@ -332,6 +332,7 @@ yt-page-navigation-progress > div { background: var(--r-pb-active) !important; }
 
 
     /* video player */
+    #player-page { height: calc(100vh - var(--ytmusic-nav-bar-height) - var(--ytmusic-player-bar-height) - 20px) }
     ytmusic-player-page:not([is-mweb-modernization-enabled])[player-ui-state="PLAYER_PAGE_OPEN"] > .content {
         padding: var(--ytmusic-player-page-vertical-padding) var(--ytmusic-player-page-horizontal-padding);
         
