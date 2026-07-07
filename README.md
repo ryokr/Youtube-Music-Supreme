@@ -16,3 +16,5 @@
 * Optimized the bottom control layout for a more immersive experience.
 * The save-playlist bar remains `pinned at the top`.
 * Much more with daily update... Give it a try :3
+
+# Installation: [Youtube-Music-Supreme](https://userstyles.world/style/23820)
