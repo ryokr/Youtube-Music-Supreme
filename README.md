@@ -1,4 +1,4 @@
-<img src="https://userstyles.world/preview/23820/16.webp" alt="Preview" width="830px">
+<img src="https://userstyles.world/preview/23820/17.webp" alt="Preview" width="830px">
 
 
 # ✦ This is the official style maintained by [ryokr](https://github.com/ryokr)
