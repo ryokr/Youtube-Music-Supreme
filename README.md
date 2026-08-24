@@ -26,10 +26,10 @@
 * The save-playlist bar remains `pinned at the top`.
 * Much more with daily future... Give it a try :3
 
-# ✦ Installation: [Youtube-Music-Supreme](https://userstyles.world/style/23820)
-You have to install [[https://add0n.com/stylus.html][Stylus]] and then click on the install link below.
+# ✦ Installation
+You have to install [Stylus](https://add0n.com/stylus.html) and then click on the install link below.
 
-[[https://userstyles.world/api/style/23820.user.cssl][https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat]]
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat)](https://userstyles.world/api/style/23820.user.css)
 
 # ✦ Contributing
 If you have any feature requests, feel free to open an issue.
