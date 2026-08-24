@@ -27,7 +27,7 @@
 * Much more with daily future... Give it a try :3
 
 # ✦ Installation
-You have to install [Stylus]([https://add0n.com/stylus.html](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)) and then click on the install link below.
+You have to install [Stylus](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and then click on the install link below.
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat)](https://userstyles.world/api/style/23820.user.css)
 
