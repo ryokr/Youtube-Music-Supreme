@@ -1,4 +1,13 @@
-<img src="https://userstyles.world/preview/23820/18.webp" alt="Preview" width="830px">
+<table>
+  <tr>
+    <td width="50%"><img src="Assets/1.png" alt="Asset 1"></td>
+    <td width="50%"><img src="Assets/2.png" alt="Asset 2"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="Assets/3.png" alt="Asset 3"></td>
+    <td width="50%"><img src="Assets/4.png" alt="Asset 4"></td>
+  </tr>
+</table>
 
 
 # ✦ This is the official style maintained by [ryokr](https://github.com/ryokr)
@@ -15,6 +24,6 @@
 * Toggleable vinyl-style thumbnail player animation via the Stylus UI.
 * Optimized the bottom control layout for a more immersive experience.
 * The save-playlist bar remains `pinned at the top`.
-* Much more with daily update... Give it a try :3
+* Much more with daily future... Give it a try :3
 
 # ✦ Installation: [Youtube-Music-Supreme](https://userstyles.world/style/23820)
