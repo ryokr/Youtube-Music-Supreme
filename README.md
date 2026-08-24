@@ -27,7 +27,7 @@
 * Much more with daily future... Give it a try :3
 
 # ✦ Installation
-You have to install [Stylus](https://add0n.com/stylus.html) and then click on the install link below.
+You have to install [Stylus]([https://add0n.com/stylus.html](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)) and then click on the install link below.
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=flat)](https://userstyles.world/api/style/23820.user.css)
 
@@ -35,4 +35,4 @@ You have to install [Stylus](https://add0n.com/stylus.html) and then click on th
 If you have any feature requests, feel free to open an issue.
 
 # ✦ License
-Code released under the [[license][MIT]] license.
+Code released under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) license.
