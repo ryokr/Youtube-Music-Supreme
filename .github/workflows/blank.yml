@@ -1,0 +1,55 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.styl'
+
+permissions:
+  contents: write
+
+jobs:
+  auto-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract Version from .styl
+        id: extract_version
+        run: |
+          # Finds the first .styl file and extracts the @version line metadata
+          VERSION=$(grep -iE "@version\s+" $(find . -name "*.styl" | head -n 1) | sed -E 's/.*@version\s+([0-9]+\.[0-9]+\.[0-9]+).*/\1/' | tr -d '[:space:]')
+          
+          if [ -z "$VERSION" ]; then
+            echo "Error: Could not extract version from .styl file."
+            exit 1
+          fi
+          
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          echo "Extracted version: $VERSION"
+
+      - name: Check if Tag Exists
+        id: check_tag
+        run: |
+          git fetch --tags
+          TAG_NAME="v${{ steps.extract_version.outputs.VERSION }}"
+          if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "Tag $TAG_NAME already exists. Skipping release."
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "Tag $TAG_NAME is new."
+          fi
+
+      - name: Create GitHub Release
+        if: steps.check_tag.outputs.exists == 'false'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "v${{ steps.extract_version.outputs.VERSION }}"
+          name: "Release v${{ steps.extract_version.outputs.VERSION }}"
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
